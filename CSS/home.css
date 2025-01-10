@@ -1,12 +1,12 @@
 #intro {
     display:flex;
     border-width:3px;
-    border-style:solid;
+    /* border-style:solid; */
     border-color:rgb(195, 255, 194);
     border-radius:3px;
 }
 
-#introtextbox {
+#outerintrotextbox {
     border-width:3px;
     /* border-style:solid; */
     border-color:blue;
@@ -19,13 +19,33 @@
     align-items: center;
 }
 
+#innerintrotextbox {
+    border-width:3px;
+    /* border-style:solid; */
+    border-color:blue;
+    border-radius:1em;
+    padding-top: 1em;
+    padding-bottom:1em;
+    padding-left:2em;
+    padding-right:2em;
+    background-color:darkolivegreen;
+}
+
 #intropic {
     border-width:3px;
     /* border-style:solid; */
     border-color:red;
     display:flex;
-    background-image: url("/photos/homephoto.jpg");
+    background-image: url("/photos/homePhotoLandscape.JPG");
     background-position:center;
     background-repeat:no-repeat;
     background-size:contain;
+}
+
+@media (max-width: 750px) {
+    #intropic {
+        height:40vw;
+        width:40vw;
+        background-image: url("/photos/homePhotoSquare.jpg");
+    }
 }

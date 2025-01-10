@@ -31,8 +31,15 @@ footer.style.height= 1.75*headerWidth + "em";
 footer.style.backgroundColor = headerColor
 
 // HOME
-var introHeight = 5 * headerWidth;
-var intro = document.getElementById('intro');
-intro.style.height = introHeight + "em";
+var introPicWidth = 66; // Width as % of vw, browser width
+var introPicAspectRatio = 4/3;
+var introPicHeight = introPicWidth / introPicAspectRatio;
 var introPic = document.getElementById('intropic');
-introPic.style.width = introHeight + "em";
+var introPicMaxHeight = 7 * headerWidth // Max height in em
+if (introPicHeight > introPicMaxHeight) {
+    introPic.style.height = introPicMaxHeight + "em";
+    introPic.style.width = introPicAspectRatio * introPicMaxHeight + "em";
+} else {
+    introPic.style.width = introPicWidth + "vw";
+    introPic.style.height = introPicHeight + "vw";
+}
