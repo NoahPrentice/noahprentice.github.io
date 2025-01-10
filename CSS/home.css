@@ -30,22 +30,33 @@
     padding-right:2em;
     background-color:darkolivegreen;
 }
-
-#intropic {
-    border-width:3px;
-    /* border-style:solid; */
-    border-color:red;
-    display:flex;
-    background-image: url("/photos/homePhotoLandscape.JPG");
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:contain;
+@media screen and (min-width: 750px) {
+    #intropic {
+        border-width:3px;
+        /* border-style:solid; */
+        border-color:red;
+        display:flex;
+        background-image: url("/photos/homePhotoLandscape.JPG");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:contain;
+    }
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
+    body {
+        background-color: lightblue;
+    }
     #intropic {
+        border-width:3px;
+        border-style:solid;
+        border-color:red;
+        display:flex;
         height:40vw;
         width:40vw;
         background-image: url("/photos/homePhotoSquare.jpg");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:contain;
     }
 }
