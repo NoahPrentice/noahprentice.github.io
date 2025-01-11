@@ -19,7 +19,7 @@
 #outerintrotextbox {
     border-width:3px;
     /* border-style:solid; */
-    border-color:blue;
+    border-color:white;
     display:flex;
     flex:1;
     font-size:2.5em;
@@ -31,8 +31,8 @@
 
 #innerintrotextbox {
     border-width:3px;
-    /* border-style:solid; */
-    border-color:blue;
+    border-style:solid;
+    border-color:white;
     border-radius:1em;
     padding-top: 1em;
     padding-bottom:1em;
