@@ -1,6 +1,6 @@
 body {
     margin-top: 6em;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(40,42,54);
     color: white;
 }
 
@@ -8,12 +8,12 @@ p {
     font-family: Verdana, Helvetica, sans-serif;
 }
 
-a:visited {
-    text-decoration: none;
+a {
+    color:olivedrab;
 }
 
-a {
-    color:black;
+a:visited {
+    text-decoration: none;
 }
 
 h1 {

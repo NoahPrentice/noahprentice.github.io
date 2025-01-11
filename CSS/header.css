@@ -12,6 +12,7 @@
     left:0px;
     right:0px;
     border-radius:3px;
+    color:black;
 }
 
 #header-links-container {
@@ -21,6 +22,7 @@
     padding-left:1.5em;
     padding-right:1.5em;
     align-items:center;
+    color:black;
 }
 .header-links {
     color:black;

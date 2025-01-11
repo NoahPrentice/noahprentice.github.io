@@ -5,7 +5,17 @@
     border-color:rgb(195, 255, 194);
     border-radius:3px;
 }
-
+#intropic {
+    border-width:3px;
+    /* border-style:solid; */
+    border-color:red;
+    display:flex;
+    background-image: url("/photos/homePhotoLandscape.JPG");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin-right: 1em;
+}
 #outerintrotextbox {
     border-width:3px;
     /* border-style:solid; */
@@ -30,33 +40,10 @@
     padding-right:2em;
     background-color:darkolivegreen;
 }
-@media screen and (min-width: 750px) {
-    #intropic {
-        border-width:3px;
-        /* border-style:solid; */
-        border-color:red;
-        display:flex;
-        background-image: url("/photos/homePhotoLandscape.JPG");
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:contain;
-    }
-}
 
-@media screen and (max-width: 750px) {
-    body {
-        background-color: lightblue;
-    }
-    #intropic {
-        border-width:3px;
-        border-style:solid;
-        border-color:red;
-        display:flex;
-        height:40vw;
-        width:40vw;
-        background-image: url("/photos/homePhotoSquare.jpg");
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:contain;
-    }
+#explanation {
+    /* border-style:solid; */
+    margin:5em;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:large;
 }

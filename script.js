@@ -9,33 +9,41 @@ for (let i = 0; i < topDivList.length; i++) {
 }
 
 // HEADER
-var headerWidth = 5;
+var headerHeight = 5;
 var headerColor = 'rgb(129, 200, 255)';
 var header = document.getElementById('headerelement');
-header.style.height = headerWidth + "em";
+header.style.height = headerHeight + "em";
 header.style.backgroundColor = headerColor;
 
 var profilePictureList = document.getElementsByClassName('profile-picture');
 for (let i = 0; i < profilePictureList.length; i++) {
-    profilePictureList[i].style.height = headerWidth + "px";
+    profilePictureList[i].style.height = headerHeight + "px";
 }
 
 var headerLinks = document.getElementById('header-links-container');
-headerLinks.style.height = headerWidth + "px";
+headerLinks.style.height = headerHeight + "px";
 
 
 // FOOTER
 
 var footer = document.getElementById('footer');
-footer.style.height= 1.75*headerWidth + "em";
+var footerHeight = 1.75*headerHeight
+footer.style.height= footerHeight + "em";
 footer.style.backgroundColor = headerColor
+var sparrowIconBox = document.getElementById('sparrowIconBox')
+sparrowIconBox.style.width = footerHeight + "em";
+
+var linkedinIconImg = document.getElementById('linkedinIconImg')
+linkedinIconImg.style.width = 2.5 + "em";
+var githubIconImg = document.getElementById('githubIconImg')
+githubIconImg.style.width = 2.5 + "em";
 
 // HOME
 var introPicWidth = 66; // Width as % of vw, browser width
 var introPicAspectRatio = 4/3;
 var introPicHeight = introPicWidth / introPicAspectRatio;
 var introPic = document.getElementById('intropic');
-var introPicMaxHeight = 7 * headerWidth // Max height in em
+var introPicMaxHeight = 7 * headerHeight // Max height in em
 if (introPicHeight > introPicMaxHeight) {
     introPic.style.height = introPicMaxHeight + "em";
     introPic.style.width = introPicAspectRatio * introPicMaxHeight + "em";
