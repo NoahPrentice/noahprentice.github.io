@@ -3,7 +3,7 @@
     background-position: center;
     background-size: contain;
     border-style:solid;
-    border-color:olivedrab;
+    border-color:rgb(255, 243, 111);
     border-radius: 3px;
     border-width: 3px;
     width:98vw;
@@ -11,17 +11,56 @@
     justify-self: center;
 }
 
+#mathCourseworkElt {
+    display:flex;
+    /* flex-direction: column; */
+    justify-content:space-evenly;
+}
+
+.courseColumn {
+    display:flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius:1em;
+    flex:1;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding:1em;
+}
+
 #mainText {
     margin:5em;
     font-family: Verdana, Helvetica, sans-serif;
     font-size:large;
 }
+#portfolioContainer {
+    /* border-style:solid; */
+    border-color:green;
+    /* border-style:dotted; */
+    display:flex;
+    /* flex-direction: column; */
+}
 
-#pdfViewer {
+.pdfContainer {
+    /* border-style:solid; */
+    border-width: 3px;
+    /* border-style:dotted; */
+    display:flex;
+    flex:1;
+    margin:0.5em;
+    border-style:solid;
+    border-color:rgb(255, 243, 111);
+}
+
+.pdfViewer {
     width: 75%;
     display:flex;
     flex:1;
     justify-self: center;
+    justify-content: center;
+    border-style:solid;
+    border-width: 3px;
+    border-color:rgb(255, 243, 111);
 }
 
 .pdf {
