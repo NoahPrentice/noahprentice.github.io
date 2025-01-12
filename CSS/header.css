@@ -37,7 +37,7 @@
 .dropbtn {
   background-color: rgb(129, 200, 255);
   color: black;
-  padding: 0.5em;
+  padding: 1em;
   /* font-size: 16px; */
   border: none;
   cursor: pointer;
