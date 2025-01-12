@@ -37,7 +37,7 @@
 .dropbtn {
   background-color: rgb(129, 200, 255);
   color: black;
-  padding: 1.5em;
+  padding: 0.5em;
   /* font-size: 16px; */
   border: none;
   cursor: pointer;
@@ -65,7 +65,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(210, 191, 255);;
+  background-color: rgb(210, 191, 255);
   min-width: 15em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-style:solid;
@@ -78,7 +78,7 @@
 /* Links inside the dropdown */
 .dropdown-content a {
   color:rgb(33, 23, 66);
-  padding: 12px 16px;
+  padding: 2em;
   text-decoration: none;
   display: block;
   z-index: 100;
