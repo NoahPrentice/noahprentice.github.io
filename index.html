@@ -20,6 +20,14 @@
                 <div class="header-links"> <a style="color:black" href="./hobbies.html">Hobbies</a> </div>
             </div>
         </header>
+        <div class="dropdown" id="dropdownDiv">
+            <button onclick="dropdownOnClick()" class="dropbtn"><i class="fa-solid fa-list"></i></button>
+            <div id="TOCDropdown" class="dropdown-content">
+                <a href="#top">Top of page</a>
+                <a href="#work">My work</a>
+                <a href="#personalInterests">My personal interests</a>
+            </div>
+        </div>
         <main>
             <div id="intro">
                 <div id="outerintrotextbox"> <div id="innerintrotextbox"><p> Hi there! <br> I'm Noah.</p></div></div> <div id="intropic"></div>
@@ -27,7 +35,7 @@
             <div id="explanation">
                 <p> I'm currently a second-year mathematics graduate student at Oregon State University. I grew up in suburban Takoma Park, Maryland, I lived in Kodaikanal, India for a couple of years, and I have lived permanently in Berea, Kentucky since then. I got my undergraduate degree at Kalamazoo College, where I studied math, philosophy, and German. <br> <br> <br>
                 
-                <div class="heading"><h2>My work</h2></div>
+                <div class="heading" id="work"><h2>My work</h2></div>
                 My work as a math grad student has involved both research and teaching components. As a researcher, I've begun working with Dr. Malgorzata Peszynska, my PhD advisor, in numerical analysis. In layman's terms, numerical analysis involves estimating stuff using a computer. Generally, the process involves
                 <ol>
                     <li> Finding a problem in an applied field like physics, chemistry, etc. This requires knowledge of the relevant topics in the applied field of choice.</li>
@@ -39,7 +47,7 @@
 
                 As an educator, I work as a graduate teaching assistant (GTA). Each term, I work with a full-time instructor at the university on a course they are teaching. Generally, this involves grading assignments and holding problem-solving reciation sessions. I also serve as a tutor in the University's Mathematics and Statistics Learning Center (MSLC), which is a drop-in tutoring center which helps all mathematics and statistics courses held at the University. <br> <br> <br>
                 
-                <div class="heading"><h2>My personal interests</h2></div>
+                <div class="heading" id="personalInterests"><h2>My personal interests</h2></div>
                 My personal interests are really varied. They include
                 <ul>
                     <li>Petting cats,</li>

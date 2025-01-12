@@ -33,38 +33,61 @@
     font-family: Verdana, Helvetica, sans-serif;
     font-size:large;
 }
-#portfolioContainer {
-    /* border-style:solid; */
-    border-color:green;
-    /* border-style:dotted; */
-    display:flex;
-    /* flex-direction: column; */
-}
-
-.pdfContainer {
-    /* border-style:solid; */
-    border-width: 3px;
-    /* border-style:dotted; */
-    display:flex;
-    flex:1;
-    margin:0.5em;
-    border-style:solid;
-    border-color:rgb(255, 243, 111);
-}
-
-.pdfViewer {
-    width: 75%;
-    display:flex;
-    flex:1;
-    justify-self: center;
-    justify-content: center;
-    border-style:solid;
-    border-width: 3px;
-    border-color:rgb(255, 243, 111);
-}
-
 .pdf {
     align-self: center;
+    justify-self:center;
     width:100%;
     aspect-ratio: 5/3;
-    }
+}
+.pdfViewer {
+    align-content: center;
+    justify-content: center;
+    justify-self:center;
+    width:75%;
+    border-style:solid;
+    border-color:rgb(255, 243, 111);
+    border-width:1px;
+}
+
+.pdfImg {
+    border-style:solid;
+    border-color:rgb(255, 243, 111);
+    border-width:1px;
+    border-radius:1em;
+}
+.subfigureElt {
+    display:flex;
+    width:75%;
+    justify-content:center;
+    align-content: center;
+    justify-self:center;
+    align-self:center;
+}
+.subfigureRow {
+    display:flex;
+    flex-direction: column;
+    justify-items: space-evenly;
+}
+
+.paperElt {
+    justify-content:center;
+    align-content: center;
+    /* justify-self:center; */
+    /* align-self:center; */
+    border-style:solid;
+    margin:0.5em;
+    border-radius: 1em;
+    border-width:3px;
+    width:45%;
+    padding:1em;
+}
+
+.paperRow {
+    display:flex;
+    /* justify-content: center; */
+    justify-content: start;
+}
+
+.caption {
+    justify-self: center;
+}

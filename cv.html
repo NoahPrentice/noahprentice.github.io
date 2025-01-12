@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./CSS/footer.css">
         <link rel="stylesheet" href="./CSS/cv.css">
     </head>
+    <script src="https://kit.fontawesome.com/6e137d97e4.js" crossorigin="anonymous"></script>
 
     <body id="body">
         <header id="headerelement">
@@ -17,19 +18,28 @@
                 <div class="header-links"> <a style="color:black" href="./hobbies.html">Hobbies</a> </div>
             </div>
         </header>
-
+        <div class="dropdown" id="dropdownDiv">
+            <button onclick="dropdownOnClick()" class="dropbtn"><i class="fa-solid fa-list"></i></button>
+            <div id="TOCDropdown" class="dropdown-content">
+                <a href="#top">Top of page</a>
+                <a href="#mathPortfolio">Mathematics portfolio</a>
+                <a href="#philosophyPortfolio">Philosophy portfolio</a>
+            </div>
+        </div>
         <main>
             <div id="corvallisPic"></div>
 
             <div id="mainText">
                 <p>
                     As I mentioned on the home page, I currently work in Corvallis, Oregon (pictured above) as a mathematics graduate student and graduate teaching assistant at Oregon State University. My most recent CV (updated 1/11/2025) reflects this work:
+                    <div class="pdfViewer"><object class="pdf" data="/cv-01-11-2025.pdf"></object></div>
+                    <br>
+                    Below is a portfolio with some of the highlights of my past work. My current work builds off of this, but these days I'm thinking more and more about the really complex, modern, society-level problems which face ordinary people. Climate change, homelessness, and education reform are a few such issues. Everyone seems to have an opinion on these issues, but there seems to be a serious knowledge gap between academic experts, policy-makers, and citizens. My hope is to help reduce this gap and support real change that helps people in my communities.
                 </p>
-                <div class="pdfViewer"><object class="pdf" data="/cv-01-11-2025.pdf"></object></div>
-                <div class="heading"><h2>Mathematics Portfolio</h2></div>
+                <div class="heading" id="mathPortfolio"><h2>Mathematics Portfolio</h2></div>
                 <p>
                     <h3>Broad takeaways</h3>
-                    Look, I know a lot of math. So, if you find a bunch of different simply connected topological spaces and you need someone to compute their fundamental groups,<sup>*</sup> I'm your guy. But studying math has given me skills that are more broadly applicable to my life. Here are my main takeaways:
+                    Look, I know a lot of math. So, if you find a bunch of different simply connected topological spaces and you need someone to compute their fundamental groups, I'm your guy.<sup>*</sup> But studying math has given me skills that are more broadly applicable to my life. Here are my main takeaways:
                     <ul>
                         <li><b>Collaboration.</b> Math is really hard. So, once you're in a graduate program, everyone assumes that you will be working with other people. And man, I've learned a lot about working with others. I'm an analysis & computing guy, but there are some problems where I'm really happy to have a topologist around. Overall, I have found this to be the most rewarding part of my time in math: it helps me work with other people.</li> <br>
                         <li><b>Logical problem-solving.</b> Learning math is best done by <i>doing</i> math, and that means solving <i>a lot</i> of problems. Math is also an extension of logic, so that means solving problems precisely, clearly, and carefully. This is not an irrelevant skill. Breaking down a problem into pieces, considering each tool in your arsenal, and thinking carefully about the perceived roadblocks, are all crucial parts of solving any problem.</li> <br>
@@ -40,10 +50,35 @@
                     <sup>*</sup><small>This is a joke.</small>
                     <br><br>
                     <h3>Projects and Research</h3>
-                    I am just beginning the process of moving away from coursework and into research with my advisor, Dr. Malgorzata Peszynska. My work is in numerical analysis, particularly as it relates to partial differential equations. Some examples of my work are shown below.
-                    <div id="portfolioContainer"><div class="pdfContainer"><object class="pdf" data="/MTH654HW1.pdf"></object></div> <div class="pdfContainer"><object class="pdf" data="/MTH654HW2.pdf"></object></div></div>
-                    <div id="portfolioContainer"><div class="pdfContainer"><object class="pdf" data="/MTH644HW.pdf"></object></div> <div class="pdfContainer"><object class="pdf" data="/MTH531HW.pdf"></object></div></div>
-                    <br> 
+                    I am just beginning the process of moving away from coursework and into research with my advisor, Dr. Malgorzata Peszynska. My work is in numerical analysis, particularly as it relates to partial differential equations. Some examples of my work are shown below. Click a caption to see a full PDF.
+                    <div class="subfigureRow">
+                        <div class="subfigureElt">
+                            <figure>
+                                <img src="/photos/6541.png" alt="Math 654 Homework, part 1" style="width:100%" class="pdfImg">
+                                <figcaption class="caption"><a href="/MTH654HW1.pdf" target="_blank">Project for MTH-654.</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="subfigureElt">
+                            <figure>
+                                <img src="/photos/6542.png" alt="Math 654 Homework, part 2" style="width:100%" class="pdfImg">
+                                <figcaption class="caption"><a href="/MTH654HW1.pdf" target="_blank">Project for MTH-654, cont'd.</a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="subfigureRow">
+                        <div class="subfigureElt">
+                            <figure>
+                                <img src="/photos/531.png" alt="Math 531 Homework" style="width:100%" class="pdfImg">
+                                <figcaption class="caption"><a href="/MTH531HW.pdf" target="_blank">Homework for MTH-531.</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="subfigureElt">
+                            <figure>
+                                <img src="/photos/644.png" alt="Math 644 Homework" style="width:100%" class="pdfImg">
+                                <figcaption class="caption"><a href="/MTH644HW.pdf" target="_blank">Homework for MTH-644.</a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
                     Additionally, I have many examples of my coding prowess on <a href="https://github.com/NoahPrentice">my GitHub!</a> I code for fun as well as for work, so I'm pretty proud of my output there. There's some numerical methods there, as well as some projects from undergrad, and I even host this website there!
                     <h3>List of all Coursework</h3>
                     <div id="mathCourseworkElt">
@@ -95,7 +130,47 @@
                         </div>
                     </div> <br><br>
                 </p>
+                <div class="heading" id="philosophyPortfolio"><h2>Philosophy Portfolio</h2></div>
+                <p>
+                    <h3>Broad Takeaways</h3>
+                    Philosophy gets a bad rap. Many people think that people who "discuss philosophy" just end up talking in circles, not making any progress. There's some truth to this, but here's what I think: as people, our goals are to (a) learn about the world around us, and (b) live a good life, helping others along the way. In order to succeed, we need to be able to figure out when we've made a mistake:
+                </p>
+                <p style="margin-left:10%;color:rgb(161, 111, 255);">"Have I believed a lie this whole time?"</p>
+                <p style="margin-right:10%;justify-self:right;color:rgb(111, 255, 176);">"Did I believe that for no reason?"</p>
+                <p style="margin-left:10%;color:rgb(255, 152, 111);">"Did I hurt their feelings?"</p>
+                <p style="margin-right:10%;justify-self:right;color:rgb(248, 255, 111);">"Am I the Jerk?"</p>
+                <p>
+                    To get answers to these questions, philosophers define their words as precisely as they can and use the tools of reasoning and argumentation. Something like this:
+                    <ol style="justify-self:center;">
+                        <li><b>Premise.</b> All men are mortal.</li>
+                        <li><b>Premise.</b> Socrates is a man.</li>
+                        <li><b>Conclusion.</b> Therefore, Socrates is mortal.</li>
+                    </ol>
+                    Arguments like this are useful because they let us take old information and <i>infer</i> new information. Of course, things don't always go smoothly. But writing down the reasons we have for believing something and talking to other people about them is the best way to succeed at our goals of learning about the world and living a good life.
+                    <h3>Projects and Studies</h3>
+                    I have written many papers in philosophy. Here's a few.
+                </p> 
+                <div class="paperRow">
+                    <div class="paperElt">
+                        <p><b>What's the deal with implications?</b> I have co-authored a paper with Dr. Lars Enden on teaching introductory logic. In formal logic, there's a relation that represents "if..., then..." statements, and it behaves counterintuitively. Lars and I argue that the usual ways of teaching this relation are bad, and we present a better one. <a href="./Horseshoe_Paper.pdf">Click here to read my logic paper!</a></p>
+                    </div>
+                    <div class="paperElt">
+                        <p><b>Are brains just computers?</b> One area of philosophy, metaphysics, contains the philosophy of mind. This field asks questions like "do we have souls?" and "what is consciousness?" I discuss the question of whether we could be conscious as just a bunch of atoms grouped together in a brain&mdash;no soul necessary. <a href="./556_Paper.pdf">Click here to read my mind paper!</a></p>
+                    </div>
+                </div>
+                <div class="paperRow">
+                    <div class="paperElt">
+                        <p><b>How does art... work?</b> A vast region of philosophy is dedicated to understanding symbols like words, sentences, and images. Philosophy of art falls into this category. I examine one perspective on how art works and relate it to an art piece from the Kalamazoo Institute of art. <a href="./Art_Paper.pdf">Click here to read my art paper!</a></p>
+                    </div>
+                    <div class="paperElt">
+                        <p><b>If God exists, why do bad things happen to good people?</b> You know, there's been a lot of fighting as a result of religion. So, I'm just gonna go ahead and solve all of the problems and make everyone happy. It feels like nobody else is going to do it, so I might as well give it a shot! This was my first philosophy paper. I wrote it for my favorite class I've ever taken: a seminar taught by Dr. Lars Enden. <a href="./Evil_Paper.docx.pdf">Click here to read my paper on God!</a></p>
+                    </div>
+                </div>
+                <p>
+                    In addition to these papers, I've also done extensive reading in the philosophy of science, epistemology, and&mdash;my favorite&mdash;the philosophy of education. I also worked through every exercise in <i>Mathematical Logic Through Python</i> by Yannai A. Gonczarowski and Noam Nisan, which was very fun. You can see the result of that work at <a href="https://github.com/NoahPrentice/logic">this GitHub repository</a>.
+                </p>
             </div>
+             
         </main>
     </body>
 
