@@ -1,0 +1,18 @@
+#hobbiesPic {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-style:solid;
+    border-color:rgb(255, 243, 111);
+    border-radius: 3px;
+    border-width: 3px;
+    width:98vw;
+    height:29.2vw;
+    justify-self: center;
+}
+
+#mainText {
+    margin:5em;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:large;
+}

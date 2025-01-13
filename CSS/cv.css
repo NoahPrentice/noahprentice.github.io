@@ -11,23 +11,6 @@
     justify-self: center;
 }
 
-#mathCourseworkElt {
-    display:flex;
-    /* flex-direction: column; */
-    justify-content:space-evenly;
-}
-
-.courseColumn {
-    display:flex;
-    flex-direction: column;
-    border-style: solid;
-    border-radius:1em;
-    flex:1;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-    padding:1em;
-}
-
 #mainText {
     margin:5em;
     font-family: Verdana, Helvetica, sans-serif;
