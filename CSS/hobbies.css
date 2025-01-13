@@ -16,3 +16,37 @@
     font-family: Verdana, Helvetica, sans-serif;
     font-size:large;
 }
+
+.picElt {
+    justify-content:center;
+    align-content: center;
+    /* justify-self:center; */
+    /* align-self:center; */
+    border-style:solid;
+    margin:0.5em;
+    border-radius: 1em;
+    border-width:3px;
+    width:45%;
+    padding:1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:max-content;
+}
+
+.picRow {
+    display:flex;
+    justify-content:space-evenly;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+.friendImg {
+    width:30%;
+    border-style:solid;
+    border-color:rgb(255, 243, 111);
+    border-radius:3px;
+    border-width:3px;
+}
+
+#friendsl1 {
+    background-image: url('/photos/friendsl1.jpeg');
+}

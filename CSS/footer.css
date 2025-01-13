@@ -40,3 +40,12 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+.secret a {
+    color:rgb(129, 200, 255);
+    margin-left:1em;
+}
+
+.secret a:hover{
+    color:rgb(161, 111, 255);
+}
