@@ -12,9 +12,37 @@
 }
 
 #mainText {
-    margin:5em;
+    /* margin:5em; */
     font-family: Verdana, Helvetica, sans-serif;
-    font-size:large;
+    /* font-size:large; */
+    /* border-style:solid; */
+}
+
+@media screen and (max-width:600px) {
+    #mainText {
+        font-size:medium;
+    }
+}
+
+@media screen and (min-width:600px) {
+    #mainText {
+        font-size:large;
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    #mainText {
+        margin:5em;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    #mainText {
+        margin-left:3em;
+        margin-right:3em;
+        margin-top:5em;
+        margin-bottom:5em;
+    }
 }
 
 .picElt {

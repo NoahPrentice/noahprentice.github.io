@@ -1,7 +1,47 @@
 #mainText {
-    margin:5em;
+    /* margin:5em; */
     font-family: Verdana, Helvetica, sans-serif;
-    font-size:large;
+    /* font-size:large; */
+}
+
+@media screen and (min-width: 1225px) {
+    #mainText {
+        margin:5em;
+    }
+
+    .courseColumn {
+        width:45%;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    #mainText {
+        margin-left:3em;
+        margin-right:3em;
+        margin-top:5em;
+        margin-bottom:5em;
+    }
+
+    .courseworkElt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courseColumn {
+        width:100%
+    }
+}
+
+@media screen and (max-width:600px) {
+    #mainText {
+        font-size:medium;
+    }
+}
+
+@media screen and (min-width:600px) {
+    #mainText {
+        font-size:large;
+    }
 }
 
 #schoolPic {
@@ -20,16 +60,20 @@
 .courseworkElt {
     display:flex;
     /* flex-direction: column; */
-    justify-content:space-evenly;
+    justify-content:center;
+    align-content: center;
+    /* border-style: dotted; */
+    border-color:red;
+    width:100%;
 }
 
 .courseColumn {
-    display:flex;
-    flex-direction: column;
+    /* display:flex; */
+    /* flex-direction: column; */
     border-style: solid;
     border-radius:1em;
-    flex:1;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
+    /* flex:1; */
+    margin-left: 1%;
+    margin-right: 1%;
     padding:1em;
 }

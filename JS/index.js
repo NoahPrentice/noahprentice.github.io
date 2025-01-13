@@ -1,24 +1,28 @@
-var introPicWidth = 66; // Width as % of vw, browser width
-var introPicAspectRatio = 4 / 3;
-var introPicHeight = introPicWidth / introPicAspectRatio;
-var introPic = document.getElementById('intropic');
-var introPicMaxHeight = 7 * headerHeight // Max height in em
-if (introPicHeight > introPicMaxHeight) {
-    introPic.style.height = introPicMaxHeight + "em";
-    introPic.style.width = introPicAspectRatio * introPicMaxHeight + "em";
-} else {
-    introPic.style.width = introPicWidth + "vw";
-    introPic.style.height = introPicHeight + "vw";
-}
+// var introPicWidth = 66; // Width as % of vw, browser width
+// var introPicAspectRatio = 4 / 3;
+// var introPicHeight = introPicWidth / introPicAspectRatio;
+// var introPic = document.getElementById('intropic');
+// var introPicMaxHeight = 7 * headerHeight // Max height in em
+// if (introPicHeight > introPicMaxHeight) {
+//     introPic.style.height = introPicMaxHeight + "em";
+//     introPic.style.width = introPicAspectRatio * introPicMaxHeight + "em";
+// } else if (introPicWidth * window.innerWidth > 0) {
+
+// } else {
+//     introPic.style.width = introPicWidth + "%";
+//     // introPic.style.height = introPicHeight + "%";
+// }
+
+var introPicImg = document.getElementById("intropicImg")
 var picChoice = Math.floor(Math.random() * 2);
 switch (picChoice) {
     case 0:
-        introPic.style.backgroundImage = "url(/photos/homePhotoLandscape.JPG)";
+        introPicImg.src = "/photos/homePhotoLandscape.JPG";
         break;
     case 1:
-        introPic.style.backgroundImage = "url(/photos/homeBear.JPG)";
+        introPicImg.src = "/photos/homeBear.JPG";
         break;
     default:
-        introPic.style.backgroundImage = "url(/photos/homePhotoLandscape.JPG)";
+        introPicImg.src = "/photos/homePhotoLandscape.JPG";
         break;
 }

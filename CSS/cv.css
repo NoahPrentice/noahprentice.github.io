@@ -12,10 +12,39 @@
 }
 
 #mainText {
-    margin:5em;
+    /* margin:5em; */
     font-family: Verdana, Helvetica, sans-serif;
-    font-size:large;
+    /* font-size:large; */
+    /* border-style:dashed; */
 }
+
+@media screen and (max-width:600px) {
+    #mainText {
+        font-size:medium;
+    }
+}
+
+@media screen and (min-width:600px) {
+    #mainText {
+        font-size:large;
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    #mainText {
+        margin:5em;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    #mainText {
+        margin-left:3em;
+        margin-right:3em;
+        margin-top:5em;
+        margin-bottom:5em;
+    }
+}
+
 .pdf {
     align-self: center;
     justify-self:center;
@@ -39,17 +68,26 @@
     border-radius:1em;
 }
 .subfigureElt {
+    /* border-style:dotted; */
     display:flex;
-    width:75%;
+    width:85%;
     justify-content:center;
     align-content: center;
     justify-self:center;
     align-self:center;
 }
+
 .subfigureRow {
     display:flex;
     flex-direction: column;
     justify-items: space-evenly;
+    /* border-style:solid; */
+}
+
+
+.caption {
+    text-align: center;
+    justify-self: center;
 }
 
 .paperElt {
@@ -63,14 +101,72 @@
     border-width:3px;
     width:45%;
     padding:1em;
+    /* min-width:550px; */
+    display:inline-block;
 }
 
 .paperRow {
     display:flex;
-    /* justify-content: center; */
-    justify-content: start;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    /* justify-content: start; */
+    /* border-style:dotted; */
+    border-color:red;
+    width:100%;
 }
 
-.caption {
-    justify-self: center;
+#philQ1 {
+    color:rgb(161, 111, 255);
+}
+
+#philQ2 {
+    color:rgb(111, 255, 176);
+}
+
+#philQ3 {
+    color:rgb(255, 152, 111);
+}
+
+#philQ4 {
+    color:rgb(248, 255, 111);
+}
+
+@media screen and (min-width:1225px){
+    #philQ2 {
+        justify-self: right;
+    }
+    #philQ4 {
+        justify-self: right;
+    }
+    .philQ {
+        margin-left: 10%;
+        margin-right:10%;
+    }
+}
+
+@media screen and (max-width:1225px){
+    .subfigureElt {
+        width:100%
+    }
+    .paperRow {
+        border-color:blue;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .paperElt {
+        width:auto;
+    }
+
+    .philQ {
+        text-align: center;
+        justify-self: center;
+        justify-content: center;
+        align-self:center;
+        margin-left:0%;
+        margin-right:0%;
+    }
 }
