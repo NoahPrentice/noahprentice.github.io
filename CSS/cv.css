@@ -55,6 +55,7 @@
     align-content: center;
     justify-content: center;
     justify-self:center;
+    align-self:center;
     width:75%;
     border-style:solid;
     border-color:rgb(255, 243, 111);
