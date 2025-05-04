@@ -1,133 +1,396 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Noah Prentice </title>
-        <link rel="icon" type="image/x-icon" href="/photos/favicon.ico">
-        <link rel="stylesheet" href="./CSS/general.css">
-        <link rel="stylesheet" href="./CSS/header.css">
-        <link rel="stylesheet" href="./CSS/footer.css">
-        <link rel="stylesheet" href="./CSS/cv.css">
-    </head>
 
-    <body id="body">
-        <header id="headerelement">
-            <div id="header-links-container">
-                <div class="header-links"> <a style="color:black" href="./index.html">Home</a> </div>
-                <div class="header-links"> <a style="color:black" href="./cv.html"><b>Portfolio & CV</b></a> </div>
-                <div class="header-links"> <a style="color:black" href="./academics.html">Academics</a> </div>
-                <div class="header-links"> <a style="color:black" href="./hobbies.html">Hobbies</a> </div>
-            </div>
-        </header>
-        <div class="dropdown" id="dropdownDiv">
-            <button onclick="dropdownOnClick()" class="dropbtn"><u class="TOCtext">Table of Contents</u></button>
-            <div id="TOCDropdown" class="dropdown-content">
-                <a href="#top">Top of page</a>
-                <a href="#mathPortfolio">Mathematics portfolio</a>
-                <a href="#philosophyPortfolio">Philosophy portfolio</a>
-            </div>
+<head>
+    <title> Noah Prentice </title>
+    <link rel="icon" type="image/x-icon" href="/photos/favicon.ico">
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/cv.css">
+</head>
+
+<body id="body">
+    <header id="headerelement">
+        <div id="header-links-container">
+            <div class="header-links"> <a style="color:black" href="./index.html">Home</a> </div>
+            <div class="header-links"> <a style="color:black" href="./cv.html"><b>Portfolio & CV</b></a> </div>
+            <div class="header-links"> <a style="color:black" href="./academics.html">Academics</a> </div>
+            <div class="header-links"> <a style="color:black" href="./hobbies.html">Hobbies</a> </div>
         </div>
-        <main>
-            <div id="corvallisPic"></div>
+    </header>
+    <div class="dropdown" id="dropdownDiv">
+        <button onclick="dropdownOnClick()" class="dropbtn"><u class="TOCtext">Table of Contents</u></button>
+        <div id="TOCDropdown" class="dropdown-content">
+            <a href="#top">Top of page</a>
+            <a href="#generalPortfolio">Community and organization portfolio</a>
+            <a href="#mathPortfolio">Mathematics portfolio</a>
+            <a href="#philosophyPortfolio">Philosophy portfolio</a>
+        </div>
+    </div>
+    <main>
+        <div id="corvallisPic"></div>
 
-            <div id="mainText">
-                <p>
-                    As I mentioned on the home page, I currently work in Corvallis, Oregon (pictured above) as a mathematics graduate student and graduate teaching assistant at Oregon State University. My most recent CV (updated 1/11/2025) reflects this work:
-                    <div class="pdfViewer"><object class="pdf" data="https://docs.google.com/gview?embedded=true&url=http://noahprentice.github.io/pdfs/cv-01-11-2025.pdf"></object></div>
-                </p>
-                <div class="heading" id="mathPortfolio"><h2>Mathematics Portfolio</h2></div>
-                <p>
-                    <h3>Broad takeaways</h3>
-                    Look, I know a lot of math. So, if you find a bunch of different simply connected topological spaces and you need someone to compute their fundamental groups, I'm your guy.<sup>*</sup> But studying math has given me skills that are more broadly applicable to my life. Here are my main takeaways:
-                    <ul>
-                        <li><b>Collaboration.</b> Math is really hard. So, once you're in a graduate program, everyone assumes that you will be working with other people. And man, I've learned a lot about working with others. I'm an analysis & computing guy, but there are some problems where I'm really happy to have a topologist around. Overall, I have found this to be the most rewarding part of my time in math: it helps me work with other people.</li> <br>
-                        <li><b>Logical problem-solving.</b> Learning math is best done by <i>doing</i> math, and that means solving <i>a lot</i> of problems. Math is also an extension of logic, so that means solving problems precisely, clearly, and carefully. This is not an irrelevant skill. Breaking down a problem into pieces, considering each tool in your arsenal, and thinking carefully about the perceived roadblocks, are all crucial parts of solving any problem.</li>
-                    </ul>
+        <div id="mainText">
+            <p>
+                As I mentioned on the home page, I currently work in Corvallis, Oregon (pictured above) as a mathematics
+                graduate student and graduate teaching assistant at Oregon State University. My most recent CV (updated
+                5/4/2025) reflects this work:
+            <div class="pdfViewer"><object class="pdf"
+                    data="https://docs.google.com/gview?embedded=true&url=http://noahprentice.github.io/pdfs/cv-05-04-2025.pdf"></object>
+            </div>
+            </p>
+            <div class="heading" id="generalPortfolio">
+                <h2>Community and organization portfolio</h2>
+            </div>
+            <p>
+            <h3>Broad takeaways</h3>
+            Outside of schoolwork, I have mostly worked on project management and community engagement. This kind of
+            work aligns with one of my core values: intentionally-designed projects and systems which have a real impact
+            on my community, especially those with unmet needs. My experiences have given me a few vital skills:
+            <ul>
+                <li><b>Collaboration and teamwork.</b> I see collaboration as immensely important. There are many worthy
+                    goals that are too ambitious for any one person, so we need to work together to achieve them.
+                    Sometimes this means playing smaller roles that serve the bigger picture, and sometimes this means
+                    taking initiative and playing leadership roles. In the next section, I lay out my
+                    experience doing both kinds of work, but both small and large roles require effective
+                    communication, so that has become my most-valued skill. I talk more about this in my <a
+                        href="#philosophyPortfolio">philosophy portfolio</a>. <br>
                     <br>
 
-                    <sup>*</sup><small>This is a joke.</small>
-                    <br><br>
-                    <h3>Projects and Research</h3>
-                    I am just beginning the process of moving away from coursework and into research with my advisor, Dr. Malgorzata Peszynska. My work is in numerical analysis, particularly as it relates to partial differential equations. Some examples of my work are shown below. Click a caption to see a full PDF.
-                    <div class="subfigureRow">
-                        <div class="subfigureElt">
-                            <figure>
-                                <img src="/photos/6541.png" alt="Math 654 Homework, part 1" style="width:100%;" class="pdfImg">
-                                <figcaption class="caption"><a href="/pdfs/MTH654HW1.pdf" target="_blank">Project for MTH-654.</a></figcaption>
-                            </figure>
-                        </div>
-                        <div class="subfigureElt">
-                            <figure>
-                                <img src="/photos/6542.png" alt="Math 654 Homework, part 2" style="width:100%" class="pdfImg">
-                                <figcaption class="caption"><a href="/pdfs/MTH654HW1.pdf" target="_blank">Project for MTH-654, cont'd.</a></figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="subfigureRow">
-                        <div class="subfigureElt">
-                            <figure>
-                                <img src="/photos/531.png" alt="Math 531 Homework" style="width:100%" class="pdfImg">
-                                <figcaption class="caption"><a href="/pdfs/MTH531HW.pdf" target="_blank">Homework for MTH-531.</a></figcaption>
-                            </figure>
-                        </div>
-                        <div class="subfigureElt">
-                            <figure>
-                                <img src="/photos/644.png" alt="Math 644 Homework" style="width:100%" class="pdfImg">
-                                <figcaption class="caption"><a href="/pdfs/MTH644HW.pdf" target="_blank">Homework for MTH-644.</a></figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    Additionally, I have many examples of my coding prowess on <a href="https://github.com/NoahPrentice">my GitHub!</a> I code for fun as well as for work, so I'm pretty proud of my output there. There's some numerical methods there, as well as some projects from undergrad, and I even host this website there! <br><br>
-                    <h3>Coursework</h3>
-                    My coursework has covered calculus, statistics, discrete math, linear algebra, real analysis (introductory analysis, metric spaces, and measure thoery), complex analysis, probability, abstract algebra, number theory, topology, and lots of numerical analysis. If you want the full details, check out <a href="./academics.html#listOfCoursework">my complete list of coursework</a> on the <a href="./academics.html">academics</a> page.
-                </p>
-                <div class="heading" id="philosophyPortfolio"><h2>Philosophy Portfolio</h2></div>
-                <p>
-                    <h3>Broad Takeaways</h3>
-                    Philosophy gets a bad rap. Many people think that people who "discuss philosophy" just end up talking in circles, not making any progress. There's some truth to this, but there are a few helpful things I've picked up over the years:
+                    Another major part of teamwork is diversity and inclusion. There is monumental value in hearing
+                    different perspectives on the same topic, so I believe that organizations and projects should go out
+                    of their way to include a wide variety of people and perspectives in their work. Instead of viewing
+                    differences as roadblocks, I use them as opportunities for open-mindedness and progress.
+                    You can read more about my thoughts on this in my <a
+                        href="https://docs.google.com/document/d/1E-CbCemt-UItMrspdQeGqFIw-G9pRWebQKOVIzYdb6Q/edit?usp=sharing"
+                        target="_blank">DEI
+                        statement</a>.
+                </li> <br>
+                <li><b>Organization of resources and people.</b> The impact of a project is dependent on the available
+                    resources and people, and I've seen many projects suffer as a result of misorganizing its resources.
+                    To address this on the individual level, I work really hard on organizing time, data, and people so
+                    that people trust me to get effective work done on my own.<br>
+                    <br>
+
+                    But effectively using resources and people also involves holistic, detail-oriented thinking: What
+                    systems should we put in place to avoid making costly mistakes? If we have different teams working
+                    on the same project in different ways, how do we combine their results and avoid miscommunication?
+                    The structure of a project or organization should be built on the answers to these questions.
+                </li>
+                <br>
+                <li><b>Iteration, data, and community.</b> Projects are founded on the goals they want to accomplish. As
+                    such, I have a very results-oriented approach to project management. But fully accomplishing all of
+                    our goals requires learning from our mistakes and improving in the future. This iterative process
+                    requires lots of feedback, so I work hard on gathering and analyzing data to provide guidance for
+                    future action. I discuss this more in my <a href="#mathPortfolio">math portfolio</a>. <br> <br>
+
+                    When a project is dedicated to serving a group of clients, gathering and analyzing data relies on
+                    building mutual trust, maintaining a sense of community, and understanding their values,
+                    backgrounds, and perspectives. It frankly does no good to view communities as helpless, predictable,
+                    and ignorant of the "real problems," so I work on building healthy partnerships with clients that
+                    let us solve the problems together. Again, diversity, equity, and inclusion are really important for
+                    this. Read more about that in my <a
+                        href="https://docs.google.com/document/d/1E-CbCemt-UItMrspdQeGqFIw-G9pRWebQKOVIzYdb6Q/edit?usp=sharing"
+                        target="_blank">DEI
+                        statement</a>.
+                </li>
+            </ul>
+            <br>
+
+            <h3>Projects and experience</h3>
+            </p>
+            <div class="paperRow">
+                <div class="paperElt">
+                    <p>
+                    <h2>CAPS</h2> Kalamazoo College's Center of Civic Engagement has a program called Community
+                    Advocates for Parents and Students, or CAPS. CAPS is a grassroots, all-volunteer community
+                    organization that provides tutoring opportunities for Kalamazoo Public School students who live in
+                    low-income housing. I worked with CAPS during the 2019-2020 school year, during which time I
                     <ul>
-                        <li><b>Clear communication.</b> Because it's so easy to misunderstand one-another, philosophy cares a lot about clarity. For example, let's say you and I are talking about exams and we agree that "exams suck and should be improved." Even if we agree on that slogan, we might <i>disagree</i> on very important details: What sucks about the exams? Do they suck for students, teachers, or administrators? Does the type of exam matter? What about the format of the exam? If we don't agree on these details, working towards a solution that satisfies both of us might be impossible. <br> <br>
-                        
-                        The most important example of clear, philosophical communication is talking about arguments and reasons. If you think that exams suck and your friend thinks that exams are great, then both of you should clearly lay out your reasoning:
-                        
-                        <div id="reasoningDiv"> <div class="arg"><p><ol><li><b>Premise.</b> Graded exams enforce a system where sucess is solving problems without external resources like the internet.</li> <li><b>Premise.</b> In the real world, successfully solving problems involves resources like the internet. </li> <li><b>Conclusion.</b> Therefore, exams enforce a misguided idea of success, which is bad. </li></ol></p></div> <div class="arg"><p><ol><li><b>Premise.</b> Exams measure how much a student understands the material. </li> <li><b>Premise.</b> We want successful students to understand the material. </li> <li><b>Conclusion.</b> Therefore, exams measure a valuable component of success, which is good. </li></ol></p></div></div>
-
-                        When our reasons are laid out this clearly, we can make progress by turning disagreements over the conclusion into disagreements over the premises. Hopefully, this lets us eventually get to a solution that everyone is happy with. </li> <br>
-                        <li><b>Critical thinking.</b> Critical thinking involves identifying problems, analysing the problem to find the root cause, and coming up with solutions that effectively solve the problem. It also involves values of open-mindedness, honesty, and humility. When discussing exams, I might realize that there's a problem with exams I hadn't considered, or maybe my proposed solution had a fatal error I was ignoring. If I really care about improving exams, I have to be able to identify problems even when that means admitting I was wrong.</li>
+                        <li>created a welcoming learning environment where the students felt interested in learning,
+                        </li>
+                        <li>helped students of all ages complete their schoolwork, focusing on literacy and math skills,
+                        </li>
+                        <li>talked with students about school, college, and their relationships to other people.</li>
                     </ul>
-                    <h3>Papers</h3>
-                    I've practiced communication and critical thinking mostly by writing papers. Here are a few topics I've written about!
-                </p> 
-                <div class="paperRow">
-                    <div class="paperElt">
-                        <p><b>What's the deal with implications?</b> I have co-authored a paper with Dr. Lars Enden on teaching introductory logic. In formal logic, there's a relation that represents "if..., then..." statements, and it behaves counterintuitively. Lars and I argue that the usual ways of teaching this relation are bad, and we present a better one. <a href="/pdfs/Horseshoe_Paper.pdf" target="_blank">Click here to read my logic paper!</a></p>
-                    </div>
-                    <div class="paperElt">
-                        <p><b>Are brains just computers?</b> One area of philosophy, metaphysics, contains the philosophy of mind. This field asks questions like "do we have souls?" and "what is consciousness?" I discuss the question of whether we could be conscious as just a bunch of atoms grouped together in a brain&mdash;no soul necessary. <a href="/pdfs/556_Paper.pdf" target="_blank">Click here to read my mind paper!</a></p>
-                    </div>
+                    This experience taught
+                    me how a student's socioeconomic conditions and daily life impact their ability to learn in a
+                    classroom or tutoring center, and it challenged me to connect what the students were learning to
+                    their lives. It also challenged me to encourage and empower the students so that they believed that
+                    they could excel in school and become the grown-up, successful college students who tutored them.
+                    </p>
                 </div>
-                <div class="paperRow">
-                    <div class="paperElt">
-                        <p><b>How does art... work?</b> A vast region of philosophy is dedicated to understanding symbols like words, sentences, and images. Philosophy of art falls into this category. I examine one perspective on how art works and relate it to an art piece from the Kalamazoo Institute of art. <a href="/pdfs/Art_Paper.pdf" target="_blank">Click here to read my art paper!</a></p>
-                    </div>
-                    <div class="paperElt">
-                        <p><b>If God exists, why do bad things happen to good people?</b> You know, there's been a lot of fighting as a result of religion. So, I'm just gonna go ahead and solve all of the problems and make everyone happy. It feels like nobody else is going to do it, so I might as well give it a shot! This was my first philosophy paper. I wrote it for my favorite class I've ever taken: a seminar taught by Dr. Lars Enden. <a href="/pdfs/Evil_Paper.docx.pdf" target="_blank">Click here to read my paper on God!</a></p>
-                    </div>
+                <div class="paperElt">
+                    <p>
+                    <h2>RA and SRA</h2> At Kalamazoo College, I worked for 2.5 years as a Residential Assistant (RA) or
+                    Senior Residential Assistant (SRA). In this role, I
+                    <ul>
+                        <li>managed RAs for 2 residence halls and coordinate action related to community programming,
+                            emergency response, student outreach, and more,</li>
+                        <li>worked with 6 other RAs to mentor 220 residents on adapting to college life, and</li>
+                        <li>led programs in collaboration with several college departments and several of the 96
+                            student organizations to give residents useful information and enjoyable activities.</li>
+                    </ul>
+                    As you can see, this was a very collaborative role. The RAs' goals of community-building and safety
+                    took lots of teamwork, and hearing a wide variety of opinions. The experience taught me a lot about
+                    working in a large team which included the College's professional staff with lots of decision-making
+                    responsibility, other SRAs with some decision-making responsibility, and RAs with a little
+                    decision-making responsibility.
+                    </p>
                 </div>
-                <p>
-                    In addition to these papers, I've also done extensive reading in the philosophy of science, epistemology, and&mdash;my favorite&mdash;the philosophy of education. I also worked through every exercise in <i>Mathematical Logic Through Python</i> by Yannai A. Gonczarowski and Noam Nisan, which was very fun. You can see the result of that work at <a href="https://github.com/NoahPrentice/logic">this GitHub repository</a>.
-                    <h3>Coursework and reading.</h3>
-                    My coursework and reading has covered informal, formal, and mathematical logic, epistemology, metaphysics and the philosophy of mind, metametaphysics and ontology, art, language, education, and more. If you want the full details, check out <a href="./academics.html#listOfCoursework">my complete list of coursework</a> on the <a href="./academics.html">academics</a> page.
-                </p>
             </div>
-        </main>
-    </body>
+            <div class="paperRow">
+                <div class="paperElt">
+                    <p>
+                    <h2>SIP and MPC</h2> At Kalamazoo College, I worked with the Math and Physics Center (MPC) as an
+                    assistant to the center. In this role, I
+                    <ul>
+                        <li>managed and advised the consultants working in the center, organized their activities, and
+                            scheduled meetings with the consultants and the director of the learning centers,</li>
+                        <li>spoke to consultants who worked at the collected and utilized feedback on tutoring
+                            resources, and</li>
+                        <li>advised students on handling courses and departments</li>
+                    </ul>
+                    Similar to serving as an SRA, my work with the MPC relied on being able to effectively organize
+                    people and data while coordinating with the supervisors or administrators who ran the center. <br>
+                    <br>
 
-    <footer id="footer">
-        <div id="footerContactInfo"> <p>Thanks for stopping by! If you'd like to reach out, email me at <a id="emailLink" href="mailto:NoahKPrentice@gmail.com">NoahKPrentice@gmail.com</a>.</p><p class="secret"><a href="https://youtu.be/Sl67y2bbP4g?si=Cd5WDMZYwqeG0S3x" target="_blank">Secret link (don't click!)</a></p></div> <div id="footerLinksContainer"><div class="social-link" id="githubLogoBox"> <a title="My GitHub" href="https://github.com/NoahPrentice"><img id="githubIconImg" alt="GitHub icon" src="/photos/githubLogo.png"></a> </div> <div class="social-link" id="linkedinLogoBox"> <a title="My LinkedIn" href="https://www.linkedin.com/in/noahprentice/"><img id="linkedinIconImg" alt="LinkedIn icon" src="/photos/linkedinLogo.png"></a> </div></div> <div id="sparrowIconBox"></div>
-    </footer>
+                    I also completed my Senior Integrated Project (SIP) in coordination with the MPC: I developed a
+                    system of videos and written documents that were accessible primarily through the MPC, since the
+                    physical documents were housed there and the digital materials were housed on an MPC channel for
+                    Microsoft Teams. In addition to developing the learning materials themselves, I developed the system
+                    which allows others to contribute materials of their own. The system comprised written documents and
+                    videos which explain the solution process for various Calculus problems, and you can find these on
+                    <a href="https://github.com/NoahPrentice/Capstone">my GitHub "Capstone" repository</a>.
+                    </p>
+                </div>
+                <div class="paperElt">
+                    <p>
+                    <h2>CGE</h2> At Oregon State University, I joined the Organizing Team for the Coalition of Graduate
+                    Employees (CGE), the graduate student labor union, at the beginning of a strike. In this role, I
+                    served the union in any way
+                    it needed, including
+                    <ul>
+                        <li>getting feedback on the strike and union actions from other graduate students through office
+                            visits, the math department town hall, and phone-banking,</li>
+                        <li>helping community members understand or navigate the leadership's direct actions,
+                            instructions, and goals, and</li>
+                        <li>moving organizing materials and checking people into the picket line on a daily basis.</li>
+                    </ul>
+                    While this role did not come with many leadership responsibilities, it was enlightening to see
+                    behind-the-scenes at a small, grassroots organization made up of the very community members
+                    it aims to serve. It also gave me direct experience working in a "flat" organization, where everyone
+                    has the same amount of power despite different amounts of responsibility.<br> <br>
 
-    <script src="/JS/general.js"></script>
-    <script src="/JS/header.js"></script>
-    <script src="/JS/footer.js"></script>
-    <script src="/JS/cv.js"></script>
+                    Since the strike has ended, I have switched roles and joined the Membership Committee, which is
+                    aimed at building community, power, and solidarity among the graduate students. Currently, I am
+                    trying to help departments organize town halls so that their graduate students have a place to make
+                    connections, get information, and receive support in any other way they might need.
+                    </p>
+                </div>
+            </div>
+            <div class="heading" id="mathPortfolio">
+                <h2>Mathematics portfolio</h2>
+            </div>
+            <p>
+            <h3>Broad takeaways</h3>
+            Look, I know a lot of math. So, if you find a bunch of different simply connected topological spaces and you
+            need someone to compute their fundamental groups, I'm your guy.<sup>*</sup> But studying math has given me
+            skills that are more broadly applicable to my life. Here are my main takeaways:
+            <ul>
+                <li><b>Understanding numbers and models.</b> My math background includes a variety of applied areas such
+                    as probability, statistics and data science, and differential equations. In these areas, success is
+                    determined by how well you understand the numbers or models you've been given. What does the data
+                    mean? How does this equation model the housing consumption of a family? Getting answers to these
+                    questions can take some pretty sophisticated analysis, but the results yield insight into what the
+                    data actually says and how to approach the problem in the first place.</li> <br>
+                <li><b>Logical problem-solving.</b> Learning math is best done by <i>doing</i> math, and that means
+                    solving <i>a lot</i> of problems. Math is also an extension of logic, so that means solving problems
+                    precisely, clearly, and carefully. This is not an irrelevant skill. Breaking down a problem into
+                    pieces, considering each tool in your arsenal, and thinking carefully about the perceived
+                    roadblocks, are all crucial parts of solving any problem.</li>
+            </ul>
+            <br>
+
+            <sup>*</sup><small>This is a joke.</small>
+            <br><br>
+            <h3>Projects and research</h3>
+            I am just beginning the process of moving away from coursework and into research with my advisor, Dr.
+            Malgorzata Peszynska. My work is in numerical analysis, particularly as it relates to partial differential
+            equations. Some examples of my work are shown below. Click a caption to see a full PDF.
+            <div class="subfigureRow">
+                <div class="subfigureElt">
+                    <figure>
+                        <img src="/photos/6541.png" alt="Math 654 Homework, part 1" style="width:100%;" class="pdfImg">
+                        <figcaption class="caption"><a href="/pdfs/MTH654HW1.pdf" target="_blank">Project for
+                                MTH-654.</a></figcaption>
+                    </figure>
+                </div>
+                <div class="subfigureElt">
+                    <figure>
+                        <img src="/photos/6542.png" alt="Math 654 Homework, part 2" style="width:100%" class="pdfImg">
+                        <figcaption class="caption"><a href="/pdfs/MTH654HW1.pdf" target="_blank">Project for MTH-654,
+                                cont'd.</a></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="subfigureRow">
+                <div class="subfigureElt">
+                    <figure>
+                        <img src="/photos/531.png" alt="Math 531 Homework" style="width:100%" class="pdfImg">
+                        <figcaption class="caption"><a href="/pdfs/MTH531HW.pdf" target="_blank">Homework for
+                                MTH-531.</a></figcaption>
+                    </figure>
+                </div>
+                <div class="subfigureElt">
+                    <figure>
+                        <img src="/photos/644.png" alt="Math 644 Homework" style="width:100%" class="pdfImg">
+                        <figcaption class="caption"><a href="/pdfs/MTH644HW.pdf" target="_blank">Homework for
+                                MTH-644.</a></figcaption>
+                    </figure>
+                </div>
+            </div>
+            Additionally, I have many examples of my coding prowess on <a href="https://github.com/NoahPrentice">my
+                GitHub!</a> I code for fun as well as for work, so I'm pretty proud of my output there. There's some
+            numerical methods there, as well as some projects from undergrad, and I even host this website there!
+            <br><br>
+            <h3>Coursework</h3>
+            My coursework has covered calculus, statistics, discrete math, linear algebra, real analysis (introductory
+            analysis, metric spaces, and measure thoery), complex analysis, probability, abstract algebra, number
+            theory, topology, and lots of numerical analysis. If you want the full details, check out <a
+                href="./academics.html#listOfCoursework">my complete list of coursework</a> on the <a
+                href="./academics.html">academics</a> page.
+            </p>
+            <div class="heading" id="philosophyPortfolio">
+                <h2>Philosophy portfolio</h2>
+            </div>
+            <p>
+            <h3>Broad takeaways</h3>
+            Philosophy gets a bad rap. Many people think that people who "discuss philosophy" just end up talking in
+            circles, not making any progress. There's some truth to this, but there are a few helpful things I've picked
+            up over the years:
+            <ul>
+                <li><b>Clear communication.</b> Because it's so easy to misunderstand one-another, philosophy cares a
+                    lot about clarity. For example, let's say you and I are talking about exams and we agree that "exams
+                    suck and should be improved." Even if we agree on that slogan, we might <i>disagree</i> on very
+                    important details: What sucks about the exams? Do they suck for students, teachers, or
+                    administrators? Does the type or format of the exam matter? If we don't agree on these details,
+                    working towards a solution that satisfies both of us might be impossible. <br> <br>
+
+                    The most important example of clear, philosophical communication is talking about arguments and
+                    reasons. If you think that exams suck and your friend thinks that exams are great, then both of you
+                    should clearly lay out your reasoning:
+
+                    <div id="reasoningDiv">
+                        <div class="arg">
+                            <p>
+                            <ol>
+                                <li><b>Premise.</b> Graded exams enforce a system where success is solving problems
+                                    without external resources like the internet.</li>
+                                <li><b>Premise.</b> In the real world, successfully solving problems involves resources
+                                    like the internet. </li>
+                                <li><b>Conclusion.</b> Therefore, exams enforce a misguided idea of success, which is
+                                    bad. </li>
+                            </ol>
+                            </p>
+                        </div>
+                        <div class="arg">
+                            <p>
+                            <ol>
+                                <li><b>Premise.</b> Exams measure how much a student understands the material. </li>
+                                <li><b>Premise.</b> We want successful students to understand the material. </li>
+                                <li><b>Conclusion.</b> Therefore, exams measure a valuable component of success, which
+                                    is good. </li>
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    When our reasons are laid out this clearly, we can make progress by turning disagreements over the
+                    conclusion into disagreements over the premises. Hopefully, this lets us eventually get to a
+                    solution that everyone is happy with.
+                </li> <br>
+                <li><b>Critical thinking.</b> Critical thinking involves identifying problems, analysing the problem to
+                    find the root cause, and coming up with solutions that effectively solve the problem. It also
+                    involves values of open-mindedness, honesty, and humility. When discussing exams, I might realize
+                    that there's a problem with exams I hadn't considered, or maybe my proposed solution had a fatal
+                    error I was ignoring. If I really care about improving exams, I have to be able to identify problems
+                    even when that means admitting I was wrong.</li>
+            </ul>
+            <h3>Papers</h3>
+            I've practiced communication and critical thinking mostly by writing papers. Here are a few topics I've
+            written about!
+            </p>
+            <div class="paperRow">
+                <div class="paperElt">
+                    <p><b>What's the deal with implications?</b> I have co-authored a paper with Dr. Lars Enden on
+                        teaching introductory logic. In formal logic, there's a relation that represents "if...,
+                        then..." statements, and it behaves counterintuitively. Lars and I argue that the usual ways of
+                        teaching this relation are bad, and we present a better one. <a href="/pdfs/Horseshoe_Paper.pdf"
+                            target="_blank">Click here to read my logic paper!</a></p>
+                </div>
+                <div class="paperElt">
+                    <p><b>Are brains just computers?</b> One area of philosophy, metaphysics, contains the philosophy of
+                        mind. This field asks questions like "do we have souls?" and "what is consciousness?" I discuss
+                        the question of whether we could be conscious as just a bunch of atoms grouped together in a
+                        brain&mdash;no soul necessary. <a href="/pdfs/556_Paper.pdf" target="_blank">Click here to read
+                            my mind paper!</a></p>
+                </div>
+            </div>
+            <div class="paperRow">
+                <div class="paperElt">
+                    <p><b>How does art... work?</b> A vast region of philosophy is dedicated to understanding symbols
+                        like words, sentences, and images. Philosophy of art falls into this category. I examine one
+                        perspective on how art works and relate it to an art piece from the Kalamazoo Institute of Art.
+                        <a href="/pdfs/Art_Paper.pdf" target="_blank">Click here to read my art paper!</a>
+                    </p>
+                </div>
+                <div class="paperElt">
+                    <p><b>If God exists, why do bad things happen to good people?</b> You know, there's been a lot of
+                        fighting as a result of religion. So, I'm just gonna go ahead and solve all of the problems and
+                        make everyone happy. It feels like nobody else is going to do it, so I might as well give it a
+                        shot! This was my first philosophy paper. I wrote it for my favorite class I've ever taken: a
+                        seminar taught by Dr. Lars Enden. <a href="/pdfs/Evil_Paper.docx.pdf" target="_blank">Click here
+                            to read my paper on God!</a></p>
+                </div>
+            </div>
+            <p>
+                In addition to these papers, I've done extensive reading in the philosophy of science,
+                epistemology, and&mdash;my favorite&mdash;the philosophy of education. I also worked through every
+                exercise in <i>Mathematical Logic Through Python</i> by Yannai A. Gonczarowski and Noam Nisan, which was
+                very fun. You can see the result of that work at <a href="https://github.com/NoahPrentice/logic">this
+                    GitHub repository</a>.
+            <h3>Coursework and reading.</h3>
+            My coursework and reading has covered informal, formal, and mathematical logic, epistemology, metaphysics
+            and the philosophy of mind, metametaphysics and ontology, art, language, education, and more. If you want
+            the full details, check out <a href="./academics.html#listOfCoursework">my complete list of coursework</a>
+            on the <a href="./academics.html">academics</a> page.
+            </p>
+        </div>
+    </main>
+</body>
+
+<footer id="footer">
+    <div id="footerContactInfo">
+        <p>Thanks for stopping by! If you'd like to reach out, email me at <a id="emailLink"
+                href="mailto:NoahKPrentice@gmail.com">NoahKPrentice@gmail.com</a>.</p>
+        <p class="secret"><a href="https://youtu.be/Sl67y2bbP4g?si=Cd5WDMZYwqeG0S3x" target="_blank">Secret link (don't
+                click!)</a></p>
+    </div>
+    <div id="footerLinksContainer">
+        <div class="social-link" id="githubLogoBox"> <a title="My GitHub" href="https://github.com/NoahPrentice"><img
+                    id="githubIconImg" alt="GitHub icon" src="/photos/githubLogo.png"></a> </div>
+        <div class="social-link" id="linkedinLogoBox"> <a title="My LinkedIn"
+                href="https://www.linkedin.com/in/noahprentice/"><img id="linkedinIconImg" alt="LinkedIn icon"
+                    src="/photos/linkedinLogo.png"></a> </div>
+    </div>
+    <div id="sparrowIconBox"></div>
+</footer>
+
+<script src="/JS/general.js"></script>
+<script src="/JS/header.js"></script>
+<script src="/JS/footer.js"></script>
+<script src="/JS/cv.js"></script>
+
 </html>
