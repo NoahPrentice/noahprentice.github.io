@@ -14,13 +14,16 @@
 // }
 
 var introPicImg = document.getElementById("intropicImg")
-var picChoice = Math.floor(Math.random() * 2);
+var picChoice = Math.floor(Math.random() * 3);
 switch (picChoice) {
     case 0:
         introPicImg.src = "/photos/homePhotoLandscape.JPG";
         break;
     case 1:
         introPicImg.src = "/photos/homeBear.JPG";
+        break;
+    case 2:
+        introPicImg.src = "/photos/homePlants.JPG";
         break;
     default:
         introPicImg.src = "/photos/homePhotoLandscape.JPG";
